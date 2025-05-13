@@ -3,13 +3,13 @@ import json
 import signal
 import os
 import logging
-import lib.progress_manager
+import lib.progress_manager as progress_manager
 from datetime import datetime
 from typing import Dict, Any
 from rich import print as rprint
 from rich.panel import Panel
 from rich.text import Text
-from config import APP_SETTINGS, EXPECTED_OUTPUT_FIELDS
+from config import SETTINGS as APP_SETTINGS, EXPECTED_OUTPUT_FIELDS
 from lib.anki import Anki, AnkiConnectError
 from lib.llm import OllamaProcessor, LLMError
 from lib.terminal_ui import UI
