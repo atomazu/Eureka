@@ -1,0 +1,6 @@
+log
+prompts/__pycache__
+__pycache__
+.env
+.venv
+update_progress.json
